@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Requisitioner Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="body-2">
+  <div class="navbar-no-shadow">
+    <div data-animation="default" data-collapse="all" data-duration="400" data-easing="ease" data-easing2="ease"
+      role="banner" class="navbar-no-shadow-container w-nav">
+      <div class="navbar-wrapper">
+        <a href="#" class="navbar-brand w-nav-brand"><img width="106" loading="lazy" alt="" src="../images/CEU-Logo.png"
+            class="image"></a>
+        <div class="w-layout-blockcontainer container w-container">
+          <h1 class="heading">CENTRO ESCOLAR UNIVERSITY</h1>
+          <div class="w-layout-vflex ceu-vault---v-flex">
+            <div class="w-layout-hflex ceu-brand---h-flex">
+              <div class="w-layout-blockcontainer ceu-brand---container w-container">
+                <h2 class="ceu">CEU</h2>
+              </div>
+              <div class="w-layout-blockcontainer vault---container w-container">
+                <h2 class="vault">VAULT</h2>
+              </div>
+            </div>
+            <div class="w-layout-blockcontainer malolos-container w-container">
+              <div class="malolos-tlts-facility">MALOLOS TLTS FACILTY</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-button-4 w-nav-button">
+        <div class="icon-2 w-icon-nav-menu"></div>
+      </div>
+      <div class="container-3 w-container">
+        <nav role="navigation" class="nav-menu-2 w-nav-menu">
+          <a href="/" class="nav-link-3 w-nav-link">HOME</a>
+          <a href="../Requisitioner Pages/requisitionerForm.html" aria-current="page"
+            class="nav-link-4 w-nav-link w--current">BORROW</a>
+          <a href="#" class="nav-link-5 w-nav-link">REQUISITION</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="formheader">
+    <h1 class="heading-4">REQUISITIONER FORM</h1>
+    <p class="paragraph">The borrower should accomplish the Application of TLTD/TLT Section Equipment, Materials,
+      Services Form. He/she shall be immediately informed by the staff member if and when his/her request is not
+      approved of by the Head/Coordinator either due to conflict in the schedule or the requested equipment is
+      unavailable on the specified date requested for use.</p>
+  </div>
+  <div class="divider"></div>
+  <div class="formtitle">
+    <h3 class="heading-5">Application for TLTD/TLT Section Equipment, Materials, Services Form</h3>
+  </div>
+  <div class="w-form">
+    <form class="form-3" method="POST" action="/api/borrow-requests">
+
+      <div class="w-layout-hflex h-flex-first-row">
+        <label class="field-label">Nature of service/s requested:</label>
+        <label class="w-checkbox checkbox-field">
+          <input type="checkbox" name="serviceNature" value="Academic" class="w-checkbox-input">
+          <span class="w-form-label">Academic</span>
+        </label>
+        <label class="w-checkbox checkbox-field">
+          <input type="checkbox" name="serviceNature" value="Co-curricular" class="w-checkbox-input">
+          <span class="w-form-label">Co-curricular / Extra-curricular</span>
+        </label>
+        <div class="w-layout-hflex check-box-with-text-input">
+          <label class="w-checkbox checkbox-field">
+            <input type="checkbox" id="serviceNatureCheckbox" name="serviceNature" value="Other"
+              class="w-checkbox-input">
+            <span class="w-form-label">Others:</span>
+          </label>
+          <input class="text-field w-input" id="serviceNatureInput" maxlength="256" name="serviceNatureText"
+            placeholder="Input here" type="text">
+        </div>
+      </div>
+
+      <div class="w-layout-hflex h-flex-second-row">
+        <label class="field-label">Purpose:</label>
+        <label class="w-checkbox checkbox-field">
+          <input type="checkbox" name="purpose" value="Presentation/Lecture" class="w-checkbox-input">
+          <span class="w-form-label">Presentation/Lecture</span>
+        </label>
+        <label class="w-checkbox checkbox-field-2">
+          <input type="checkbox" name="purpose" value="Viewing" class="w-checkbox-input">
+          <span class="w-form-label">Viewing</span>
+        </label>
+        <div class="w-layout-hflex check-box-with-text-input">
+          <label class="w-checkbox checkbox-field">
+            <input type="checkbox" id="purposeCheckbox" name="purpose" value="Other" class="w-checkbox-input">
+            <span class="w-form-label">Other Purpose:</span>
+          </label>
+          <input class="text-field w-input" id="purposeInput" maxlength="256" name="purposeText"
+            placeholder="Input here" type="text">
+        </div>
+      </div>
+
+
+      <div class="w-layout-hflex h-flex-third-row">
+        <div class="w-layout-vflex datelines-v-flex">
+          <label class="date-label">Date</label>
+          <input class="datelines w-input" type="date" name="date_1">
+          <input class="datelines w-input" type="date" name="date_2">
+          <input class="datelines w-input" type="date" name="date_3">
+          <input class="datelines w-input" type="date" name="date_4">
+          <input class="datelines w-input" type="date" name="date_5">
+        </div>
+        <div class="w-layout-vflex timelines-v-flex">
+          <label class="time-label">Time</label>
+          <input class="datelines w-input" type="time" name="time_1">
+          <input class="datelines w-input" type="time" name="time_2">
+          <input class="datelines w-input" type="time" name="time_3">
+          <input class="datelines w-input" type="time" name="time_4">
+          <input class="datelines w-input" type="time" name="time_5">
+        </div>
+        <div class="w-layout-vflex productcatalogue">
+          <label class="w-checkbox cataloguecheckboxfield">
+            <input type="checkbox" value="1" class="w-checkbox-input">
+            <span class="w-form-label">DLP/LCD Projector</span>
+          </label>
+          <label class="w-checkbox cataloguecheckboxfield">
+            <input type="checkbox" value="2" class="w-checkbox-input">
+            <span class="w-form-label">Laptop</span>
+          </label>
+          <label class="w-checkbox cataloguecheckboxfield">
+            <input type="checkbox" value="3" class="w-checkbox-input">
+            <span class="w-form-label">Overhead Projector</span>
+          </label>
+          <label class="w-checkbox cataloguecheckboxfield">
+            <input type="checkbox" value="4" class="w-checkbox-input">
+            <span class="w-form-label">VHS Player</span>
+          </label>
+        </div>
+        <div class="w-layout-vflex productcatalogue">
+          <label class="w-checkbox cataloguecheckboxfield">
+            <input type="checkbox" value="5" class="w-checkbox-input">
+            <span class="w-form-label">Sound System</span>
+          </label>
+          <label class="w-checkbox cataloguecheckboxfield">
+            <input type="checkbox" value="6" class="w-checkbox-input">
+            <span class="w-form-label">DVD Player</span>
+          </label>
+          <label class="w-checkbox cataloguecheckboxfield">
+            <input type="checkbox" value="7" class="w-checkbox-input">
+            <span class="w-form-label">VCD Player</span>
+          </label>
+          <label class="w-checkbox cataloguecheckboxfield">
+            <input type="checkbox" value="8" class="w-checkbox-input">
+            <span class="w-form-label">CD Cassette Player</span>
+          </label>
+        </div>
+        <div class="w-layout-vflex productcatalogue">
+          <label class="w-checkbox cataloguecheckboxfield">
+            <input type="checkbox" value="9" class="w-checkbox-input">
+            <span class="w-form-label">Karaoke</span>
+          </label>
+          <label class="w-checkbox cataloguecheckboxfield">
+            <input type="checkbox" class="w-checkbox-input">
+            <span class="w-form-label">Microphone</span>
+          </label>
+          <label class="w-checkbox cataloguecheckboxfield">
+            <input type="checkbox" class="w-checkbox-input">
+            <span class="w-form-label">Document Camera</span>
+          </label>
+          <div class="w-layout-hflex">
+            <label class="w-checkbox cataloguecheckboxfield">
+              <input type="checkbox" class="w-checkbox-input">
+              <span class="w-form-label">Others:</span>
+            </label>
+            <input class="cataloguecheckwithinput w-input" maxlength="256" placeholder="Input here" type="text">
+          </div>
+        </div>
+        <div class="w-layout-vflex productcatalogue">
+          <label class="w-checkbox cataloguecheckboxfield">
+            <input type="checkbox" class="w-checkbox-input">
+            <span class="w-form-label">Digital Video Camera</span>
+          </label>
+          <label class="w-checkbox cataloguecheckboxfield">
+            <input type="checkbox" class="w-checkbox-input">
+            <span class="w-form-label">Digital Camera (Still)</span>
+          </label>
+          <div class="w-layout-vflex flex-block-3">
+            <label class="w-checkbox cataloguecheckboxfield">
+              <input type="checkbox" name="instructionalMaterials" id="instructionalOtherCheckbox" class="w-checkbox-input">
+              <span class="w-form-label">Instructional Materials:</span>
+            </label>
+            <input class="instructionalmaterials w-input" maxlength="256" placeholder="Input here" type="text">
+          </div>
+        </div>
+      </div>
+      <p class="paragraph">I acknowledge receipt of and responsibility for item/s listed above which I promise to return
+        on the specified date and time.<br> I agree to the imposed fine per hour for each material/equipment not
+        returned on due time.</p>
+      <p class="paragraph">I also understand that I am accountable for any loss and/or damage of the item/s I borrowed.
+        I promise to abide by all these policies as I hereby affix my signature and certify that personal data stated
+        herein are correct.</p><input type="submit" data-wait="Please wait..." class="w-button" value="Submit">
+      <div>
+        <div class="w-layout-blockcontainer w-container"></div>
+      </div>
+    </form>
+    <div class="w-form-done">
+      <div>Thank you! Your submission has been received!</div>
+    </div>
+    <div class="w-form-fail">
+      <div>Oops! Something went wrong while submitting the form.</div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=66cc658e01114f3b15bdfac9"
+    type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+  <script src="script.js" type="text/javascript"></script>
+</body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    let checkboxes = document.querySelectorAll('input[type="checkbox"][name="serviceNature"]');
+    checkboxes.forEach(checkbox => {
+      checkbox.addEventListener('change', function () {
+        if (this.checked) {
+          checkboxes.forEach(otherCheckbox => {
+            if (otherCheckbox !== this) {
+              otherCheckbox.checked = false;
+            }
+          });
+        }
+      });
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    let checkboxes = document.querySelectorAll('input[type="checkbox"][name="purpose"]');
+    checkboxes.forEach(checkbox => {
+      checkbox.addEventListener('change', function () {
+        if (this.checked) {
+          checkboxes.forEach(otherCheckbox => {
+            if (otherCheckbox !== this) {
+              otherCheckbox.checked = false;
+            }
+          });
+        }
+      });
+    });
+  });
+</script>
+
+<script> 
+  const serviceNatureCheckbox = document.getElementById('serviceNatureCheckbox');
+  const serviceNatureInput = document.getElementById('serviceNatureInput');
+  const purposeCheckbox = document.getElementById('purposeCheckbox');
+  const purposeInput = document.getElementById('purposeInput');
+
+  // Update for Service Nature
+  serviceNatureInput.addEventListener('input', function () {
+    if (serviceNatureCheckbox.checked) {
+      serviceNatureCheckbox.value = `Others: ${serviceNatureInput.value}`;
+    }
+  });
+
+  serviceNatureCheckbox.addEventListener('change', function () {
+    if (serviceNatureCheckbox.checked) {
+      serviceNatureCheckbox.value = `Others: ${serviceNatureInput.value}`;
+    } else {
+      serviceNatureCheckbox.value = 'Other';
+    }
+  });
+
+  // Update for Purpose
+  purposeInput.addEventListener('input', function () {
+    if (purposeCheckbox.checked) {
+      purposeCheckbox.value = `Other Purposes: ${purposeInput.value}`;
+    }
+  });
+
+  purposeCheckbox.addEventListener('change', function () {
+    if (purposeCheckbox.checked) {
+      purposeCheckbox.value = `Other Purposes: ${purposeInput.value}`;
+    } else {
+      purposeCheckbox.value = 'Other';
+    }
+  });
+
+  // Service Nature: Input field automatically checks the checkbox
+  serviceNatureInput.addEventListener('focus', function () {
+    serviceNatureCheckbox.checked = true;
+  });
+
+  serviceNatureCheckbox.addEventListener('change', function () {
+    if (!serviceNatureCheckbox.checked) {
+      serviceNatureInput.value = ''; // Clear input when unchecked
+    }
+  });
+
+  // Purpose: Input field automatically checks the checkbox
+  purposeInput.addEventListener('focus', function () {
+    purposeCheckbox.checked = true;
+  });
+
+  purposeCheckbox.addEventListener('change', function () {
+    if (!purposeCheckbox.checked) {
+      purposeInput.value = ''; // Clear input when unchecked
+    }
+  });
+
+  // Logic to clear input fields when switching checkboxes for Service Nature
+  let checkboxes = document.querySelectorAll('input[type="checkbox"][name="serviceNature"]');
+  checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', function () {
+      if (this.checked && this !== serviceNatureCheckbox) {
+        serviceNatureInput.value = ''; // Clear the input field when another checkbox is checked
+      }
+    });
+  });
+
+  // Logic to clear input fields when switching checkboxes for Purpose
+  checkboxes = document.querySelectorAll('input[type="checkbox"][name="purpose"]');
+  checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', function () {
+      if (this.checked && this !== purposeCheckbox) {
+        purposeInput.value = ''; // Clear the input field when another checkbox is checked
+      }
+    });
+  });
+
+</script>
+
+<script>//pang uncheck ng boxes
+
+// Service Nature: Automatically check the checkbox when the input field is clicked
+serviceNatureInput.addEventListener('focus', function () {
+  // Uncheck all other checkboxes in the "serviceNature" group
+  let serviceNatureCheckboxes = document.querySelectorAll('input[type="checkbox"][name="serviceNature"]');
+  serviceNatureCheckboxes.forEach(checkbox => {
+    checkbox.checked = false; // Uncheck all checkboxes
+  });
+
+  // Check the corresponding "Others" checkbox
+  serviceNatureCheckbox.checked = true;
+});
+
+// Purpose: Automatically check the checkbox when the input field is clicked
+purposeInput.addEventListener('focus', function () {
+  // Uncheck all other checkboxes in the "purpose" group
+  let purposeCheckboxes = document.querySelectorAll('input[type="checkbox"][name="purpose"]');
+  purposeCheckboxes.forEach(checkbox => {
+    checkbox.checked = false; // Uncheck all checkboxes
+  });
+
+  // Check the corresponding "Other Purposes" checkbox
+  purposeCheckbox.checked = true;
+});
+
+// Logic to clear input fields when switching checkboxes for Service Nature
+checkboxes = document.querySelectorAll('input[type="checkbox"][name="serviceNature"]');
+checkboxes.forEach(checkbox => {
+  checkbox.addEventListener('change', function () {
+    if (this.checked && this !== serviceNatureCheckbox) {
+      serviceNatureInput.value = ''; // Clear the input field when another checkbox is checked
+      serviceNatureCheckbox.checked = false; // Uncheck "Others" checkbox
+    }
+  });
+});
+
+// Logic to clear input fields when switching checkboxes for Purpose
+checkboxes = document.querySelectorAll('input[type="checkbox"][name="purpose"]');
+checkboxes.forEach(checkbox => {
+  checkbox.addEventListener('change', function () {
+    if (this.checked && this !== purposeCheckbox) {
+      purposeInput.value = ''; // Clear the input field when another checkbox is checked
+      purposeCheckbox.checked = false; // Uncheck "Other Purposes" checkbox
+    }
+  });
+});
+</script>
+  
