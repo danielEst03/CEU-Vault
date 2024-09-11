@@ -5176,6 +5176,11 @@ textarea.w-input, textarea.w-select {
     display: block;
   }
 
+  .comparison-table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .comparison-row-main {
     grid-column-gap: 20px;
     text-align: center;
@@ -5201,8 +5206,8 @@ textarea.w-input, textarea.w-select {
 
   .comparison-positive {
     background-image: none;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
     padding-left: 0;
   }
 
@@ -5259,6 +5264,7 @@ textarea.w-input, textarea.w-select {
   font-style: normal;
   font-display: swap;
 }
+
 /* cyrillic-ext */
 @font-face {
   font-family: 'Montserrat';
