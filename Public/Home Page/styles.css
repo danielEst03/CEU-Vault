@@ -2844,6 +2844,8 @@ html {
     background-image: url("https://cdn.prod.website-files.com/66e266eb815840690d1652d0/66e518038a1df228f46a138f_CEU-BG-Pink.jpeg");
     background-position: 0 0;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     background-attachment: fixed;
     width: 100%;
     max-width: none;
