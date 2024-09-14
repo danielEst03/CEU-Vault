@@ -2841,15 +2841,20 @@ html {
   }
   
   .container-3 {
-    background-image: url("https://cdn.prod.website-files.com/66e266eb815840690d1652d0/66e518038a1df228f46a138f_CEU-BG-Pink.jpeg");
-    background-position: 0 0;
+    background-image: url(../images/CEU-BG-Pink.jpeg);
     background-size: cover;
+<<<<<<< HEAD
+
+=======
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+>>>>>>> f0478dbfab5ba9f68638926d5f20ef84d3c13e4b
     width: 100%;
     max-width: none;
     height: 0%;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   
   .heading-6 {
