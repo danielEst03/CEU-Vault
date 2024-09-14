@@ -2843,19 +2843,20 @@ html {
   .container-3 {
     background-image: url(../images/CEU-BG-Pink.jpeg);
     background-size: cover;
-<<<<<<< HEAD
-
-=======
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
->>>>>>> f0478dbfab5ba9f68638926d5f20ef84d3c13e4b
     width: 100%;
     max-width: none;
-    height: 0%;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 100vh; /* or a specific height depending on your layout */
   }
+  
+  /* For mobile devices */
+  @media (max-width: 768px) {
+    .container-3 {
+      background-attachment: scroll; /* Override fixed background for mobile */
+    }
+  }
+  
   
   .heading-6 {
     color: #fff;
